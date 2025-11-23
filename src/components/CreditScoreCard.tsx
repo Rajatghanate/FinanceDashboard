@@ -8,7 +8,7 @@ interface CreditScoreCardProps {
 export function CreditScoreCard({ className }: CreditScoreCardProps) {
   return (
     <Card className={`p-5 ${className}`}>
-      <div className="flex items-center justify-between mb-4">
+      <div className="flex items-center justify-between mb-3">
         <h3 className="text-lg font-semibold text-card-foreground flex items-center gap-2">
           <Gauge className="h-5 w-5" />
           Credit Score
@@ -18,12 +18,12 @@ export function CreditScoreCard({ className }: CreditScoreCardProps) {
         </button>
       </div>
 
-      <div className="border-b border-border mb-4"></div>
+      <div className="border-b border-border mb-3"></div>
 
-      <div className="space-y-4">
+      <div className="space-y-3">
         <div className="flex items-start justify-between">
           <div>
-            <div className="text-sm text-muted-foreground mb-2">
+            <div className="text-sm text-muted-foreground mb-1">
               Your credit score is <span className="font-semibold text-card-foreground">710</span>
             </div>
             <div className="text-xs text-muted-foreground">
@@ -33,7 +33,7 @@ export function CreditScoreCard({ className }: CreditScoreCardProps) {
           <span className="text-2xl bg-amber-100 dark:bg-amber-900/30 w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0">😎</span>
         </div>
 
-        <div className="space-y-3">
+        <div className="space-y-2">
           <div className="flex gap-1 h-8">
             {Array.from({ length: 50 }).map((_, i) => (
               <div

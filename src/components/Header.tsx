@@ -8,7 +8,7 @@ export function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="h-20 bg-card sticky top-0 z-10">
+    <header className="h-20 bg-card sticky top-0 z-50">
       <div className="h-full px-4 lg:px-8 flex items-center justify-between">
         <div className="flex items-center gap-4">
           <Sheet open={open} onOpenChange={setOpen}>
