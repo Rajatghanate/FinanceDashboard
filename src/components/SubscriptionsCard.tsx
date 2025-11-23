@@ -9,7 +9,7 @@ interface SubscriptionsCardProps {
 export function SubscriptionsCard({ className }: SubscriptionsCardProps) {
   return (
     <Card className={`p-5 rounded-3xl bg-white ${className}`}>
-      <div className="flex items-center justify-between mb-5">
+      <div className="flex items-center justify-between mb-4">
         <div className="flex items-center gap-2">
           <FileText className="h-5 w-5 text-gray-700" />
           <h3 className="text-lg font-semibold text-gray-900">My Subscriptions</h3>
@@ -19,8 +19,7 @@ export function SubscriptionsCard({ className }: SubscriptionsCardProps) {
         </button>
       </div>
 
-      <div className="relative p-6 rounded-2xl bg-[#F8FAFC] overflow-hidden mb-6">
-
+      <div className="relative p-5 rounded-2xl bg-[#F8FAFC] overflow-hidden mb-4">
         <div className="absolute top-0 right-0 h-full w-[140px] pointer-events-none">
           <svg
             width="100%"
@@ -54,8 +53,7 @@ export function SubscriptionsCard({ className }: SubscriptionsCardProps) {
         </div>
 
         <div className="relative z-10 pr-10">
-
-          <div className="relative w-10 h-10 mb-4">
+          <div className="relative w-10 h-10 mb-3">
             <div className="absolute inset-0 rounded-full bg-gradient-to-b from-pink-400 to-blue-500 p-[1.5px]">
               <div className="w-full h-full rounded-full bg-white flex items-center justify-center">
                 <Music className="w-5 h-5 text-blue-500" style={{ stroke: 'url(#cornerGradient)' }} />
@@ -75,11 +73,10 @@ export function SubscriptionsCard({ className }: SubscriptionsCardProps) {
         </div>
       </div>
 
-      <div className="flex flex-col space-y-1">
-
-        <div className="py-3 flex items-center justify-between border-t border-gray-100">
+      <div className="flex flex-col space-y-0.5">
+        <div className="py-2.5 flex items-center justify-between border-t border-gray-100">
           <div className="flex items-center gap-3">
-            <div className="w-11 h-11 rounded-full bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center shadow-sm">
+            <div className="w-10 h-10 rounded-full bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center shadow-sm">
               <Music className="h-5 w-5 text-white" />
             </div>
             <div>
@@ -99,9 +96,9 @@ export function SubscriptionsCard({ className }: SubscriptionsCardProps) {
           </div>
         </div>
 
-        <div className="py-3 flex items-center justify-between border-t border-gray-100">
+        <div className="py-2.5 flex items-center justify-between border-t border-gray-100">
           <div className="flex items-center gap-3">
-            <div className="w-11 h-11 rounded-full bg-gradient-to-br from-red-500 to-red-600 flex items-center justify-center shadow-sm">
+            <div className="w-10 h-10 rounded-full bg-gradient-to-br from-red-500 to-red-600 flex items-center justify-center shadow-sm">
               <Play className="h-5 w-5 text-white fill-current" />
             </div>
             <div>
@@ -121,9 +118,9 @@ export function SubscriptionsCard({ className }: SubscriptionsCardProps) {
           </div>
         </div>
 
-        <div className="py-3 flex items-center justify-between border-t border-gray-100">
+        <div className="py-2.5 flex items-center justify-between border-t border-gray-100">
           <div className="flex items-center gap-3">
-            <div className="w-11 h-11 rounded-full bg-gradient-to-br from-cyan-400 to-blue-500 flex items-center justify-center shadow-sm">
+            <div className="w-10 h-10 rounded-full bg-gradient-to-br from-cyan-400 to-blue-500 flex items-center justify-center shadow-sm">
               <Video className="h-5 w-5 text-white" />
             </div>
             <div>
@@ -142,7 +139,6 @@ export function SubscriptionsCard({ className }: SubscriptionsCardProps) {
             </button>
           </div>
         </div>
-
       </div>
     </Card>
   );
